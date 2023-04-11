@@ -19,7 +19,7 @@ function play() {
         Swal.fire({
             icon: 'error',
             title: '😔',
-            text: 'Что-то не то, введи другое число!',
+            text: 'Something is wrong! Try a different number.',
             confirmButtonColor: '#2192FF'
            
           })
@@ -29,7 +29,7 @@ function play() {
         Swal.fire({
             icon: 'error',
             title: '😔',
-            text: 'Кажется, это не число. Попробуй еще раз!',
+            text: 'This does not look like a number, try again!',
             confirmButtonColor: '#2192FF'
           })
     }
@@ -38,20 +38,20 @@ function play() {
 
         if (userNumber<answer){
             Swal.fire({
-                text:'Повыше!',
+                text:'Higher!',
                 confirmButtonColor: '#2192FF'
             }
             )
         }
         else if (userNumber>answer){
             Swal.fire({
-                text:'Пониже!',
+                text:'Lower!',
                 confirmButtonColor: '#2192FF'})
         }
         else {
             Swal.fire({
-                title: 'Та-даааааа!!!!!',
-                text: 'Ты выиграл!',
+                title: 'Ta-daaaaaaa!!!!!',
+                text: 'You won!',
                 imageUrl: 'https://media.istockphoto.com/photos/businessman-holding-smile-icon-for-the-best-evaluation-customer-picture-id1356554393?b=1&k=20&m=1356554393&s=170667a&w=0&h=XbW0qI1vAzM0OjZlpDCqtKGNmQ2MY_vxAvwXDCB2qJ0=',
                 imageWidth: 400,
                 imageHeight: 200,
